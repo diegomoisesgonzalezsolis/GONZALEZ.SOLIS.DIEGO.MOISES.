@@ -1,0 +1,81 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\author{Gonzalez Solis Diego Moises}
+\title{Angulos Euler}
+
+\begin{document}
+
+\maketitle
+\includegraphics[scale=2]{upzroja.jpg} 
+\newpage
+\section{introduccion}
+Los ángulos de Euler constituyen un conjunto de tres coordenadas angulares que sirven para especificar la orientación de un sistema de referencia de ejes ortogonales, normalmente móvil, respecto a otro sistema de referencia de ejes ortogonales normalmente fijos.
+Dados dos sistemas de coordenadas xyz y XYZ con origen común, es posible especificar la posición de un sistema en términos del otro usando tres ángulos.
+
+\includegraphics[scale=1]{1.png} 
+
+La definición matemática es estática y se basa en escoger dos planos, uno en el sistema de referencia y otro en el triedro rotado. En el esquema adjunto serían los planos xy y XY. Escogiendo otros planos se obtendrían distintas convenciones alternativas, las cuales se llaman de Tait-Bryan cuando los planos de referencia son no-homogéneos (por ejemplo xy y XY son homogéneos, mientras xy y XZ no lo son).
+La intersección de los planos coordenados xy y XY escogidos se llama línea de nodos, y se usa para definir los tres ángulos:
+el ángulo entre el eje x y la línea de nodos.
+el ángulo entre el eje z y el eje Z.
+el ángulo entre la línea de nodos y el eje X.
+
+Rotaciones de Euler
+
+Son los movimientos resultantes de variar uno de los ángulos de Euler dejando fijos los otros dos. Tienen nombres particulares:
+
+Precesión
+
+Nutación
+
+Rotación
+
+Este conjunto de rotaciones no es ni intrínseco ni extrínseco en su totalidad, sino que es una mezcla de ambos conceptos. La precesión es extrínseca, la rotación intrínseca lógicamente intrínseca, y la nutación es una rotación intermedia, alrededor de la línea de nodos.
+
+
+
+
+Matrices de rotación y velocidad angular
+
+A partir de la relación entre los ángulos de Euler y el movimiento de los soportes de Cardano, se puede probar que todo sistema de coordenadas puede ser descrito con los tres ángulos de Euler. Si llamamos R a la matriz de rotación tridimensional que representa la transformación de coordenadas desde el sistema fijo al sistema móvil, el teorema de Euler sobre rotaciones tridimensionales, afirma que existe una descomposición única en términos de los tres ángulos de Euler:
+
+
+
+
+
+\[\begin{array}{crl}
+cos      &sin        &0  \\  
+-sin     &cos        &0  \\
+0        &0          &1  \\
+\end{array}\]
+
+
+\[\begin{array}{crl}
+1      &0        &0  \\  
+0     &cos        &sin  \\
+0        &-sin0          &sin0  \\
+\end{array}\]
+
+\[\begin{array}{crl}
+cos0      &sin0        &0  \\  
+-sin0     &cos0        &0  \\
+0        &0          &1  \\
+\end{array}\]
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
